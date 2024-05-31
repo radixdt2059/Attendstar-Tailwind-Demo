@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attendstar</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png" />
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body>
+    <div class="page-content dashboard">
+      <div class="flex">
+        <div class="left_sidebar fixed h-full top-0 left-0 bg-[#21232C] md:max-w-56 w-full min-h-screen p-4 flex flex-col justify-between items-center">
+          <div class="sidebar-link-wrapper w-full">
+            <a href="/" title="Attendstart">
+              <img src="./assets/img/Logo.svg" alt="Attendstar" width="148" height="24" class="pt-1 mx-auto" />
+            </a>
+            <div class="navwrapper w-full mt-5">
+              <ul class="flex flex-col">
+                <li class="flex items-center gap-3 py-2.5 px-3 group mb-1.5">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.3 1.25H2.45C2.02996 1.25 1.81994 1.25 1.65951 1.33175C1.51839 1.40365 1.40365 1.51839 1.33175 1.65951C1.25 1.81994 1.25 2.02996 1.25 2.45V5.3C1.25 5.72004 1.25 5.93006 1.33175 6.09049C1.40365 6.23161 1.51839 6.34635 1.65951 6.41825C1.81994 6.5 2.02996 6.5 2.45 6.5H5.3C5.72004 6.5 5.93006 6.5 6.09049 6.41825C6.23161 6.34635 6.34635 6.23161 6.41825 6.09049C6.5 5.93006 6.5 5.72004 6.5 5.3V2.45C6.5 2.02996 6.5 1.81994 6.41825 1.65951C6.34635 1.51839 6.23161 1.40365 6.09049 1.33175C5.93006 1.25 5.72004 1.25 5.3 1.25Z" stroke="#8D95AF" class="group-hover:stroke-white group-hover:transition-all group-hover:ease-linear group-hover:duration-200" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M13.55 1.25H10.7C10.28 1.25 10.0699 1.25 9.90951 1.33175C9.76839 1.40365 9.65365 1.51839 9.58175 1.65951C9.5 1.81994 9.5 2.02996 9.5 2.45V5.3C9.5 5.72004 9.5 5.93006 9.58175 6.09049C9.65365 6.23161 9.76839 6.34635 9.90951 6.41825C10.0699 6.5 10.28 6.5 10.7 6.5H13.55C13.97 6.5 14.1801 6.5 14.3405 6.41825C14.4816 6.34635 14.5963 6.23161 14.6683 6.09049C14.75 5.93006 14.75 5.72004 14.75 5.3V2.45C14.75 2.02996 14.75 1.81994 14.6683 1.65951C14.5963 1.51839 14.4816 1.40365 14.3405 1.33175C14.1801 1.25 13.97 1.25 13.55 1.25Z" stroke="#8D95AF" class="group-hover:stroke-white group-hover:transition-all group-hover:ease-linear group-hover:duration-200" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M13.55 9.5H10.7C10.28 9.5 10.0699 9.5 9.90951 9.58175C9.76839 9.65365 9.65365 9.76839 9.58175 9.90951C9.5 10.0699 9.5 10.28 9.5 10.7V13.55C9.5 13.97 9.5 14.1801 9.58175 14.3405C9.65365 14.4816 9.76839 14.5963 9.90951 14.6683C10.0699 14.75 10.28 14.75 10.7 14.75H13.55C13.97 14.75 14.1801 14.75 14.3405 14.6683C14.4816 14.5963 14.5963 14.4816 14.6683 14.3405C14.75 14.1801 14.75 13.97 14.75 13.55V10.7C14.75 10.28 14.75 10.0699 14.6683 9.90951C14.5963 9.76839 14.4816 9.65365 14.3405 9.58175C14.1801 9.5 13.97 9.5 13.55 9.5Z" stroke="#8D95AF" class="group-hover:stroke-white group-hover:transition-all group-hover:ease-linear group-hover:duration-200" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M5.3 9.5H2.45C2.02996 9.5 1.81994 9.5 1.65951 9.58175C1.51839 9.65365 1.40365 9.76839 1.33175 9.90951C1.25 10.0699 1.25 10.28 1.25 10.7V13.55C1.25 13.97 1.25 14.1801 1.33175 14.3405C1.40365 14.4816 1.51839 14.5963 1.65951 14.6683C1.81994 14.75 2.02996 14.75 2.45 14.75H5.3C5.72004 14.75 5.93006 14.75 6.09049 14.6683C6.23161 14.5963 6.34635 14.4816 6.41825 14.3405C6.5 14.1801 6.5 13.97 6.5 13.55V10.7C6.5 10.28 6.5 10.0699 6.41825 9.90951C6.34635 9.76839 6.23161 9.65365 6.09049 9.58175C5.93006 9.5 5.72004 9.5 5.3 9.5Z" stroke="#8D95AF" class="group-hover:stroke-white group-hover:transition-all group-hover:ease-linear group-hover:duration-200" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  <a href="/" title="Dashboard" class="text-sm font-semibold text-txt-gray-2 group-hover:text-white group-hover:transition-all group-hover:ease-linear group-hover:duration-200">Dashboard</a>
+                </li>
+                <li class="flex items-center gap-3 py-2.5 px-3 group bg-txt-maroon text-white rounded-md">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_52_6197)">
+                      <path d="M3.98722 14.5788C4.44347 13.5039 5.50869 12.75 6.75 12.75H11.25C12.4913 12.75 13.5565 13.5039 14.0128 14.5788M12 7.125C12 8.78185 10.6569 10.125 9 10.125C7.34315 10.125 6 8.78185 6 7.125C6 5.46815 7.34315 4.125 9 4.125C10.6569 4.125 12 5.46815 12 7.125ZM16.5 9C16.5 13.1421 13.1421 16.5 9 16.5C4.85786 16.5 1.5 13.1421 1.5 9C1.5 4.85786 4.85786 1.5 9 1.5C13.1421 1.5 16.5 4.85786 16.5 9Z" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="group-hover:stroke-white" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_52_6197">
+                        <rect width="18" height="18" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <a href="/" title="My Account" class="text-sm font-semibold text-white">My Account</a>
+                </li>
+                <li class="border border-txt-gray-4 my-2.5"></li>
+                <li class="flex items-center gap-3 py-2.5 px-3 group">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 12.75L15.75 9M15.75 9L12 5.25M15.75 9H6.75M6.75 2.25H5.85C4.58988 2.25 3.95982 2.25 3.47852 2.49524C3.05516 2.71095 2.71095 3.05516 2.49524 3.47852C2.25 3.95982 2.25 4.58988 2.25 5.85V12.15C2.25 13.4101 2.25 14.0402 2.49524 14.5215C2.71095 14.9448 3.05516 15.289 3.47852 15.5048C3.95982 15.75 4.58988 15.75 5.85 15.75H6.75" stroke="#8D95AF" class="group-hover:stroke-white group-hover:transition-all group-hover:ease-linear group-hover:duration-200" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  <a href="/" title="Sign Out" class="text-sm font-semibold text-txt-gray-2 group-hover:text-white group-hover:transition-all group-hover:ease-linear group-hover:duration-200">Sign Out</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="manager-support-box pt-11 px-4 pb-5 bg-gradient-to-b from-[#BB253B] to-[#772430] w-full rounded-xl relative">
+            <div class="contact flex flex-col items-center justify-center gap-1">
+              <p class="text-xs text-offwhite-4">Event Manager Support</p>
+              <a href="tel:(615) 223-1973" title="Call For Support" class="text-sm text-white font-semibold hover:text-offwhite-4">(615) 223-1973</a>
+            </div>
+            <hr class="border-maroon-border my-2.5" />
+            <div class="links-group">
+              <a href="/" title="News & Update" class="block mb-1.5 text-xs text-offwhite-4 hover:text-white">News & Update</a>
+              <a href="/" title="Feedback" class="block mb-1.5 text-xs text-offwhite-4 hover:text-white">Feedback</a>
+              <a href="/" title="Terms of Services" class="block mb-1.5 text-xs text-offwhite-4 hover:text-white">Terms of Services</a>
+            </div>
+            <div class="chat-icon absolute p-4 rounded-full bg-chat-bg border-4 border-txtprimary -top-[4%] left-[50%] -translate-x-1/2 -translate-y-1/2">
+              <img src="./assets/img/chat 1.svg" alt="chat" width="40" height="40" />
+            </div>
+          </div>
+        </div>
+        <div class="right_panel m-7 rounded-xl border border-offwhite-4 max-w[calc(100% - 224px)] ms-64 w-full shadow-md relative">
+          <div class="panel-top-bg min-h-[115px] bg-gradient-to-r from-linear-pink to-linear-purple rounded-t-xl">
+            <div class="avatar absolute top-[78px] left-[32px]">
+              <img src="./assets/img/Avatar.svg" alt="avatar" width="72" height="72" />
+            </div>
+          </div>
+          <div class="user-info pt-[50px] px-8 pb-4">
+            <h1 class="text-xl text-txtprimary font-bold">Rachel Green</h1>
+            <p class="text-sm text-txt-gray-3 font-medium"> rachelgreen@gmail.com </p>
+          </div>
+          <div class="tab-wrapper">
+            <div class="mb-4 border-b border-offwhite-5">
+              <ul class="flex flex-nowrap whitespace-nowrap -mb-px text-sm font-medium text-center px-8 gap-x-6" id="default-tab" data-tabs-toggle="#default-tab-content" data-tabs-active-classes="text-txt-maroon hover:text-maroon-600 border-b-2 border-txt-maroon" data-tabs-inactive-classes="text-txt-gray-2 border-b-0" role="tablist">
+                <li class="me-2" role="presentation">
+                  <button class="inline-block font-semibold text-sm pt-2.5 pb-3 rounded-t-lg" id="account-tab" data-tabs-target="#account" type="button" role="tab" aria-controls="account" aria-selected="false"> Account </button>
+                </li>
+                <li class="me-2" role="presentation">
+                  <button class="inline-block font-semibold text-sm pt-2.5 pb-3 rounded-t-lg" id="marketing-tab" data-tabs-target="#marketing" type="button" role="tab" aria-controls="marketing" aria-selected="false"> Marketing </button>
+                </li>
+                <li class="me-2" role="presentation">
+                  <button class="inline-block font-semibold text-sm pt-2.5 pb-3 rounded-t-lg" id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false"> Contacts </button>
+                </li>
+                <li role="presentation">
+                  <button class="inline-block font-semibold text-sm pt-2.5 pb-3 rounded-t-lg" id="users-tab" data-tabs-target="#users" type="button" role="tab" aria-controls="users" aria-selected="false"> Additionals Users </button>
+                </li>
+                <li role="presentation">
+                  <button class="inline-block font-semibold text-sm pt-2.5 pb-3 rounded-t-lg" id="tickets-tab" data-tabs-target="#tickets" type="button" role="tab" aria-controls="tickets" aria-selected="false"> Ticket Fee Settings </button>
+                </li>
+              </ul>
+            </div>
+            <div id="default-tab-content">
+              <div class="mr-2" id="account" role="tabpanel" aria-labelledby="account-tab">
+                <div class="content-wrapper max-w-[1200px] w-full p-8">
+                  <form id="accountTab">
+                    <div class="basic-info-wrapper pb-6 border-b border-offwhite-5">
+                      <p class="text-sm text-txt-gray-4 font-bold mb-1"> Basic Information </p>
+                      <p class="text-sm text-txt-gray-3 font-medium"> Your name, email and organization info </p>
+                      <div class="form-wrapper pt-4 grid grid-cols-12 gap-x-5 gap-y-4">
+                        <div class="input-wrapper col-span-6">
+                          <label for="fname" class="text-xs text-txt-gray-2">First Name</label>
+                          <div class="mt-1">
+                            <input type="text" name="fname" id="fname" value="Rachel" class="block w-full rounded-md border-1 border-offwhite-5 py-2 text-txt-gray-4 text-sm" />
+                          </div>
+                        </div>
+                        <div class="input-wrapper col-span-6">
+                          <label for="lname" class="text-xs text-txt-gray-2">Last Name</label>
+                          <div class="mt-1">
+                            <input type="text" name="lname" id="lname" value="Green" class="block w-full rounded-md border-1 border-offwhite-5 py-2 text-txt-gray-4 text-sm" />
+                          </div>
+                        </div>
+                        <div class="input-wrapper col-span-6">
+                          <label for="eid" class="text-xs text-txt-gray-2">Email Address</label>
+                          <div class="mt-1">
+                            <input type="email" name="eid" id="eid" value="rachelgreen@gmail.com" class="block w-full rounded-md border-1 border-offwhite-5 py-2 text-txt-gray-4 text-sm" />
+                          </div>
+                        </div>
+                        <div class="input-wrapper col-span-6">
+                          <label for="orgname" class="text-xs text-txt-gray-2">Organization Name</label>
+                          <div class="mt-1">
+                            <input type="text" name="orgname" id="orgname" value="My Organization" class="block w-full rounded-md border-1 border-offwhite-5 py-2 text-txt-gray-4 text-sm" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="change-pass-wrapper py-6 border-b border-offwhite-5">
+                      <p class="text-sm text-txt-gray-4 font-bold">Password</p>
+                      <p class="text-sm text-txt-gray-3 font-medium"> Click “Change password” to update password and leave the field blank to keep the current </p>
+                      <div class="form-wrapper pt-4 grid grid-cols-12 items-end gap-x-5 gap-y-4">
+                        <div class="input-wrapper col-span-6">
+                          <label for="pass" class="text-xs text-txt-gray-2">Current Password</label>
+                          <div class="mt-1">
+                            <input type="password" name="pass" id="pass" class="block w-full rounded-md border-1 border-offwhite-5 py-2 text-txt-gray-4 text-sm" />
+                          </div>
+                        </div>
+                        <div class="input-wrapper col-span-6">
+                          <button class="rounded-lg bg-offwhite-3 leading-5 py-2 px-4 text-xs font-semibold border border-offwhite-4 hover:bg-offwhite-3 hover:text-txt-gray-2 hover:transition-all hover:ease-linear hover:duration-300"> Change Password </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="address-wrapper py-6 border-b border-offwhite-5">
+                      <p class="text-sm text-txt-gray-4 font-bold mb-1">Address</p>
+                      <p class="text-sm text-txt-gray-3 font-medium"> Update your address details here </p>
+                      <div class="form-wrapper pt-4 grid grid-cols-12 gap-x-5 gap-y-4">
+                        <div class="input-wrapper col-span-6">
+                          <label for="address1" class="text-xs text-txt-gray-2">Address 1</label>
+                          <div class="mt-1">
+                            <input type="text" name="address1" id="address1" value="54 Brooklyn Street" class="block w-full rounded-md border-1 border-offwhite-5 py-2 text-txt-gray-4 text-sm" />
+                          </div>
+                        </div>
+                        <div class="input-wrapper col-span-6">
+                          <label for="address2" class="text-xs text-txt-gray-2">Address 2</label>
+                          <div class="mt-1">
+                            <input type="text" name="address2" id="address2" placeholder="Type here" class="block w-full rounded-md border-1 border-offwhite-5 py-2 text-txt-gray-4 text-sm placeholder:text-txt-gray-2" />
+                          </div>
+                        </div>
+                        <div class="input-wrapper col-span-6">
+                          <label for="city" class="text-xs text-txt-gray-2">City</label>
+                          <div class="mt-1">
+                            <input type="text" name="city" id="city" value="New York" class="block w-full rounded-md border-1 border-offwhite-5 py-2 text-txt-gray-4 text-sm" />
+                          </div>
+                        </div>
+                        <div class="input-wrapper col-span-6">
+                          <label for="state" class="text-xs text-txt-gray-2">State</label>
+                          <div class="mt-1">
+                            <select name="state" id="state" class="block w-full rounded-md border-1 border-offwhite-5 py-2 text-txt-gray-4 text-sm">
+                              <option value="United States of America" selected> United States of America </option>
+                              <option value="India"> India </option>
+                              <option value="Australia">Australia</option>
+                              <option value="Canada">Canada</option>
+                              <option value="England">England</option>
+                              <option value="Germany">Germany</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="contact-info-wrapper py-6 border-b border-offwhite-5">
+                      <p class="text-sm text-txt-gray-4 font-bold mb-1"> Contact Info </p>
+                      <p class="text-sm text-txt-gray-3 font-medium"> Update your contact info here </p>
+                      <div class="form-wrapper pt-4 grid grid-cols-12 items-end gap-x-5 gap-y-4">
+                        <div class="input-wrapper col-span-6">
+                          <label for="pass" class="text-xs text-txt-gray-7">Phone Number</label>
+                          <div class="flex items-center mt-1">
+                            
+                            <div id="dropdown-phone" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-52 dark:bg-gray-700">
+                              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdown-phone-button">
+                                <li>
+                                  <button type="button" class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">
+                                    <span class="inline-flex items-center">
+                                       United States (+1) </span>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button type="button" class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">
+                                    <span class="inline-flex items-center">
+                                       United Kingdom (+44) </span>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button type="button" class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">
+                                    <span class="inline-flex items-center">
+                                       Australia (+61) </span>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button type="button" class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">
+                                    <span class="inline-flex items-center">
+                                       Germany (+49) </span>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button type="button" class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">
+                                    <span class="inline-flex items-center">
+                                       France (+33) </span>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button type="button" class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white">
+                                    <span class="inline-flex items-center">
+                                      Germany (+49) </span>
+                                  </button>
+                                </li>
+                              </ul>
+                            </div>
+                            <label for="phone-input" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Phone number:</label>
+                            <div class="relative w-full flex items-stretch">
+                              <div class="p-1 border border-offwhite-5 rounded-s-lg border-e-0">
+                                <button id="dropdown-phone-button" data-dropdown-toggle="dropdown-phone" class="flex-shrink-0 z-10 inline-flex items-center py-2 px-3 text-sm font-medium text-center text-txt-gray-2 bg-offwhite-3 rounded-lg hover:bg-gray-200" type="button">
+                                    +1 <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                                  </svg>
+                                </button>
+                              </div>
+                              <input type="number" id="phone-input" class="block py-2 w-full z-20 text-sm text-txt-gray-4 rounded-e-lg border-s-0 border border-offwhite-5" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Type here" required />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="feature-setting-wrapper py-6 border-b border-offwhite-5">
+                      <p class="text-sm text-txt-gray-4 font-bold mb-1"> Feature Settings </p>
+                      <p class="text-sm text-txt-gray-3 font-medium"> Update your ticket protection setting </p>
+                      <div class="tick-protection-box mt-4 py-5 px-6 rounded-xl bg-off-blue-3">
+                        <p class="text-sm text-txt-gray-4 font-bold"> Enable Ticket Protection </p>
+                        <div class="txt-toggle flex items-center">
+                          <p class="text-sm text-txt-gray-3 font-medium"> Encourage more ticket sales with no additional work or additional cost to your event! Ticket Protection gives ticket buyers the option to pay an additional fee for a refundable booking upgrade when purchasing tickets. Your event's refund policy remains intact. All refund claim submissions, approval decisions, and refunds are managed and paid out by the Ticket Protection service. Refunds awarded through this service do not come out of your pocket. </p>
+                          <label class="inline-flex items-center cursor-pointer ml-[28px]">
+                            <input type="checkbox" value="" class="sr-only peer" />
+                            <div class="relative w-11 h-6 bg-offwhite-4 peer-focus:outline-none dark:peer-focus:ring-txt-maroon rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-txt-maroon"></div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="admin-options-wrapper py-6 border-b border-offwhite-5 w-10/12">
+                      <p class="text-sm text-txt-gray-4 font-bold mb-1"> Admin Options </p>
+                      <p class="text-sm text-txt-gray-3 font-medium"> Update your admin options </p>
+                      <div class="mt-4 bg-offwhite-3 border border-offwhite-4 rounded-lg py-4 px-5">
+                        <div class="txt-toggle-wrapper flex justify-between pb-4 border-b border-offwhite-4">
+                          <p class="text-sm text-txt-gray-4 font-bold"> Enable Client to Export Attendees </p>
+                          <label class="inline-flex items-center cursor-pointer ml-[28px]">
+                            <input type="checkbox" value="" class="sr-only peer" />
+                            <div class="relative w-11 h-6 bg-offwhite-4 peer-focus:outline-none dark:peer-focus:ring-txt-maroon rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-txt-maroon"></div>
+                          </label>
+                        </div>
+                        <div class="txt-toggle-wrapper flex justify-between py-4 border-b border-offwhite-4">
+                          <p class="text-sm text-txt-gray-4 font-bold"> Require Billing </p>
+                          <label class="inline-flex items-center cursor-pointer ml-[28px]">
+                            <input type="checkbox" value="" class="sr-only peer" checked />
+                            <div class="relative w-11 h-6 bg-offwhite-4 peer-focus:outline-none dark:peer-focus:ring-txt-maroon rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-txt-maroon"></div>
+                          </label>
+                        </div>
+                        <div class="txt-toggle-wrapper flex justify-between py-4 border-b border-offwhite-4">
+                          <p class="text-sm text-txt-gray-4 font-bold"> Show CCA Banner </p>
+                          <label class="inline-flex items-center cursor-pointer ml-[28px]">
+                            <input type="checkbox" value="" class="sr-only peer" />
+                            <div class="relative w-11 h-6 bg-offwhite-4 peer-focus:outline-none dark:peer-focus:ring-txt-maroon rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-txt-maroon"></div>
+                          </label>
+                        </div>
+                        <div class="txt-toggle-wrapper flex justify-between pt-4">
+                          <p class="text-sm text-txt-gray-4 font-bold"> Enable Affirm via Stripe </p>
+                          <label class="inline-flex items-center cursor-pointer ml-[28px]">
+                            <input type="checkbox" value="" class="sr-only peer" checked />
+                            <div class="relative w-11 h-6 bg-offwhite-4 peer-focus:outline-none dark:peer-focus:ring-txt-maroon rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-txt-maroon"></div>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form-wrapper pt-4 grid grid-cols-12 items-end gap-x-3 gap-y-4">
+                        <div class="input-wrapper col-span-7">
+                          <label for="event-fee" class="text-xs text-txt-gray-2">Default Event Fee</label>
+                          <div class="mt-1 relative">
+                            <input type="text" name="event-fee" id="event-fee" value="New York" class="block w-full rounded-md border-1 border-offwhite-5 py-2 text-txt-gray-4 text-sm" />
+                            <div class="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none">
+                              <img src="./assets/img/Icon.png" alt="dollar" width="10" height="16" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="export-btn col-span-5">
+                          <button class="rounded-lg bg-transparent py-2 px-4 text-xs font-semibold border border-txt-maroon text-txt-maroon hover:transition-all hover:ease-linear hover:duration-300 hover:bg-txt-maroon leading-5 hover:text-white"> Export Attendees </button>
+                        </div>
+                      </div>
+                      <div class="test-user-box mt-4 p-5 rounded-xl bg-offwhite-3">
+                        <p class="text-sm text-txt-gray-4 font-bold"> Mark this user a test user </p>
+                        <div class="txt-toggle flex items-center justify-between">
+                          <p class="text-sm text-txt-gray-3 font-medium"> This removes the user and their activity from any public data and all orders from our reporting </p>
+                          <label class="inline-flex items-center cursor-pointer ml-[28px]">
+                            <input type="checkbox" value="" class="sr-only peer" />
+                            <div class="relative w-11 h-6 bg-offwhite-4 peer-focus:outline-none dark:peer-focus:ring-txt-maroon rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-txt-maroon"></div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="address-wrapper pt-6 pb-28">
+                      <p class="text-sm text-txt-gray-4 font-bold mb-1">Campaign Details</p>
+                      <p class="text-sm text-txt-gray-3 font-medium"> Update your campaign details </p>
+                      <div class="form-wrapper pt-4 grid grid-cols-12 gap-x-5 gap-y-4">
+                        <div class="input-wrapper col-span-6">
+                          <label for="source" class="text-xs text-txt-gray-2">Source</label>
+                          <div class="mt-1">
+                            <input type="text" name="source" id="source" value="ActiveCampaign" class="block w-full rounded-md border-1 border-offwhite-5 py-2 text-txt-gray-4 text-sm" />
+                          </div>
+                        </div>
+                        <div class="input-wrapper col-span-6">
+                          <label for="campaign" class="text-xs text-txt-gray-2">Campaign</label>
+                          <div class="mt-1">
+                            <input type="text" name="campaign" id="campaign" placeholder="10102018" class="block w-full rounded-md border-1 border-offwhite-5 py-2 text-txt-gray-4 text-sm placeholder:text-txt-gray-2" />
+                          </div>
+                        </div>
+                        <div class="input-wrapper col-span-6">
+                          <label for="medium" class="text-xs text-txt-gray-2">Medium</label>
+                          <div class="mt-1">
+                            <input type="text" name="medium" id="medium" value="email" class="block w-full rounded-md border-1 border-offwhite-5 py-2 text-txt-gray-4 text-sm" />
+                          </div>
+                        </div>
+                        <div class="input-wrapper col-span-6">
+                          <label for="content" class="text-xs text-txt-gray-2">Content</label>
+                          <div class="mt-1">
+                            <input type="text" name="content" id="content" value="AttendStar Newsletter: Event Marketing Services from AttendStar" class="block w-full rounded-md border-1 border-offwhite-5 py-2 text-txt-gray-4 text-sm" />
+                          </div>
+                        </div>
+                        <div class="input-wrapper col-span-6">
+                          <label for="term" class="text-xs text-txt-gray-2">Term</label>
+                          <div class="mt-1">
+                            <input type="text" name="term" id="term" placeholder="Type here" class="block w-full rounded-md border-1 border-offwhite-5 py-2 text-txt-gray-4 text-sm placeholder:text-txt-gray-2" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="hidden" id="marketing" role="tabpanel" aria-labelledby="marketing-tab">
+                <div class="content-wrapper max-w-[948px] w-full p-8">
+                  <p class="text-sm text-gray-500 dark:text-gray-400"> Marketing content</p>
+                </div>
+              </div>
+              <div class="hidden" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">     
+                <div class="content-wrapper max-w-[948px] w-full p-8">
+                  <p class="text-sm text-gray-500 dark:text-gray-400"> Contact content </p>                
+                </div>     
+              </div>
+              <div class="hidden" id="users" role="tabpanel" aria-labelledby="users-tab">        
+                <div class="content-wrapper max-w-[948px] w-full p-8">
+                  <p class="text-sm text-gray-500 dark:text-gray-400"> Users content </p>                
+                </div>  
+              </div>
+              <div class="hidden" id="tickets" role="tabpanel" aria-labelledby="tickets-tab">   
+                <div class="content-wrapper max-w-[948px] w-full p-8">
+                  <p class="text-sm text-gray-500 dark:text-gray-400"> Tickets content </p>                
+                </div>       
+              </div>
+            </div>
+            <div class="py-5 px-8 border-t border-offwhite-4">
+              <div class="button-wrapper flex gap-3">
+                <button class="rounded-lg bg-txt-maroon py-2 leading-5 px-4 text-xs font-semibold text-white border border-transparent hover:bg-transparent hover:text-txt-maroon hover:border hover:border-txt-maroon hover:transition-all hover:ease-linear hover:duration-300"> Save Changes </button>
+                <button class="rounded-lg bg-offwhite-3 py-2 leading-5 px-4 text-xs font-semibold border border-offwhite-4 hover:bg-offwhite-3 hover:text-txt-gray-2 hover:transition-all hover:ease-linear hover:duration-300"> Discard Changes </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+  </body>
+</html>
